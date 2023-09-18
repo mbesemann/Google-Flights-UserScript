@@ -5,6 +5,7 @@
 // @description  Sets Google Flights params to One-Way & Business class.
 // @author       PimpChicken
 // @match        https://www.google.com/travel/flights*
+// @match        https://www.google.ca/travel/flights*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com
 // @grant        none
 // ==/UserScript==
