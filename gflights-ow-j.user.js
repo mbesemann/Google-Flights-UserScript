@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google Flights OW J
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  Sets Google Flights params to One-Way & Business class.
 // @author       PimpChicken
 // @match        https://www.google.com/travel/flights*
@@ -13,11 +13,14 @@
 (function() {
     'use strict';
 
+let currency = 'USD'; // Replace USD with preferred currency
+let country = 'US'; // Repalce US with preferred country
+
 if ('URLSearchParams' in window) {
     var searchParams = new URLSearchParams(window.location.search);
-    if(searchParams.get('curr') != 'USD' || searchParams.get('gl') != 'US') {
-        searchParams.set('curr', 'USD'); // Replace USD with preferred currency
-        searchParams.set('gl', 'US'); // Repalce US with preferred country
+    if(searchParams.get('curr') != currency || searchParams.get('gl') != country) {
+        searchParams.set('curr', currency);
+        searchParams.set('gl', country);
         window.location.search = searchParams.toString();
     }
 }
