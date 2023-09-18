@@ -4,10 +4,12 @@
 // @version      0.4
 // @description  Sets Google Flights params to One-Way & Business class.
 // @author       PimpChicken
-// @match        https://www.google.com/travel/flights*
-// @match        https://www.google.ca/travel/flights*
 // @exclude      https://www.google.ca/travel/flights/booking*
 // @exclude      https://www.google.ca/travel/flights/search*
+// @exclude      https://www.google.com/travel/flights/booking*
+// @exclude      https://www.google.com/travel/flights/search*
+// @match        https://www.google.com/travel/flights*
+// @match        https://www.google.ca/travel/flights*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com
 // @grant        none
 // ==/UserScript==
